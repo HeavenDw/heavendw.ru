@@ -3,17 +3,3 @@
 .app {
   @include adaptive-value('padding-bottom', 5, 3, $fullWidthContainer, $minWidth, 'rem');
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  @media (max-width: $md2) {
-    gap: 16px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: $md4) {
-    gap: 12px;
-    grid-template-columns: 1fr;
-  }
-}

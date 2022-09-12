@@ -1,4 +1,4 @@
 .app{padding-bottom:5rem}@media(max-width: 81em){.app{padding-bottom:calc(
       3rem + 2 *
         ((100vw - (32rem)) / (129.6 - 32))
-    )}}.grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px}@media(max-width: 61.998em){.grid{gap:16px;grid-template-columns:repeat(2, 1fr)}}@media(max-width: 29.998em){.grid{gap:12px;grid-template-columns:1fr}}
+    )}}
