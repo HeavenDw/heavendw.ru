@@ -1,0 +1,22 @@
+@import '../../scss/variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include adaptive-value('padding-top', 5, 2, $fullWidthContainer, $minWidth, 'rem');
+  @include adaptive-value('padding-bottom', 3, 1.5, $fullWidthContainer, $minWidth, 'rem');
+}
+
+.title {
+  @include adaptive-value('font-size', 6, 2.8, $fullWidthContainer, $minWidth, 'rem');
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.img {
+  img {
+    max-width: 100%;
+    max-height: 10rem;
+  }
+}

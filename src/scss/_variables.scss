@@ -1,0 +1,40 @@
+$mainColor: #fff8f8;
+$firstColor: #030309;
+$secondColor: rgba(0, 0, 0, 0.2);
+$thirdColor: #ebe45e;
+$fourColor: rgba(58, 158, 253, 0.1);
+$minWidth: 32;
+$maxWidthContainer: 126.6; // Максимальная ширина контейнера
+$containerPadding: 3;
+$fullWidthContainer: $maxWidthContainer + $containerPadding;
+// Breakpoints:
+$md1: calc(#{$maxWidthContainer + em} / 1.6); // max width container in em
+$md2: 61.998em; //991px
+$md3: 47.998em; //767px
+$md4: 29.998em; //479px
+
+@mixin adaptive-value(
+  $property,
+  $propertyStartSize,
+  $propertyMinSize,
+  $layoutStartSize,
+  $layoutMinSize,
+  $unit
+) {
+  //$propertyStartSize - property value on the $layoutStartSize, $propertyMinSize - minimal property value on the layoutMinSize
+  $addSize: #{$propertyStartSize - $propertyMinSize};
+  #{$property}: #{$propertyStartSize + $unit};
+  $mediaSize: #{$fullWidthContainer / 1.6 + em};
+  @if ($unit == 'rem') {
+    $mediaSize: #{$layoutStartSize / 1.6 + em};
+  }
+  @elseif ($unit == "px") {
+    $mediaSize: #{$layoutStartSize / 16 + em};
+  }
+  @media (max-width: $mediaSize) {
+    #{$property}: calc(
+      #{$propertyMinSize + $unit} + #{$addSize} *
+        ((100vw - (#{$layoutMinSize + $unit})) / (#{$layoutStartSize} - #{$layoutMinSize}))
+    );
+  }
+}

@@ -1,0 +1,10 @@
+.header{display:flex;justify-content:space-between;align-items:center;padding-top:5rem;padding-bottom:3rem}@media(max-width: 81em){.header{padding-top:calc(
+      2rem + 3 *
+        ((100vw - (32rem)) / (129.6 - 32))
+    )}}@media(max-width: 81em){.header{padding-bottom:calc(
+      1.5rem + 1.5 *
+        ((100vw - (32rem)) / (129.6 - 32))
+    )}}.title{font-size:6rem;font-weight:800;letter-spacing:.05em}@media(max-width: 81em){.title{font-size:calc(
+      2.8rem + 3.2 *
+        ((100vw - (32rem)) / (129.6 - 32))
+    )}}.img img{max-width:100%;max-height:10rem}

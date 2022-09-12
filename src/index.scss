@@ -1,0 +1,50 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+@import './scss/variables';
+@import './scss/null';
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  color: $mainColor;
+  background-color: $firstColor;
+  font-family: 'Raleway';
+  font-size: 1.6rem;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 auto;
+}
+
+._container {
+  max-width: #{$fullWidthContainer + rem};
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1.5rem;
+  @media (max-width: $md1) {
+    max-width: 97rem;
+  }
+  @media (max-width: $md2) {
+    max-width: 75rem;
+  }
+  @media (max-width: $md3) {
+    max-width: 57rem;
+  }
+  @media (max-width: $md4) {
+    max-width: none;
+    padding: 0 1rem;
+  }
+}
