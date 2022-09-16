@@ -1,11 +1,21 @@
 @import '../../scss/variables';
 
 .header {
+  background-color: #0b0b24;
+  position: fixed;
+  border-bottom: 1px solid #fff;
+  top: 0;
+  left: 0;
+  max-height: 8rem;
+  width: 100%;
+  z-index: 10;
+  padding: 1rem 0;
+}
+
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include adaptive-value('padding-top', 5, 2, $fullWidthContainer, $minWidth, 'rem');
-  @include adaptive-value('padding-bottom', 3, 1.5, $fullWidthContainer, $minWidth, 'rem');
 }
 
 .title {
@@ -17,6 +27,6 @@
 .img {
   img {
     max-width: 100%;
-    max-height: 10rem;
+    max-height: 6rem;
   }
 }

@@ -16,13 +16,13 @@
     )}}@media(max-width: 81em){.root{border-bottom-right-radius:calc(
       1.2rem + 0.4 *
         ((100vw - (32rem)) / (129.6 - 32))
-    )}}@media(any-hover: hover){.root:hover .img{border:2px solid #ebe45e}.root:hover .img::before{opacity:0}.root:hover .title,.root:hover .text{color:#ebe45e}}.img{border:2px solid transparent;border-top-left-radius:1.6rem;border-bottom-right-radius:1.6rem;overflow:hidden;position:relative;transition:border-color .3s ease 0s}@media(max-width: 81em){.img{border-top-left-radius:calc(
+    )}}@media(any-hover: hover){.root:hover .img{border:2px solid #ef0}.root:hover .img::before{opacity:0}.root:hover .title,.root:hover .text{color:#ef0}.root:hover .title{text-decoration:underline}}.img{border:2px solid transparent;border-top-left-radius:1.6rem;border-bottom-right-radius:1.6rem;overflow:hidden;position:relative;transition:border-color .3s ease 0s}@media(max-width: 81em){.img{border-top-left-radius:calc(
       1.2rem + 0.4 *
         ((100vw - (32rem)) / (129.6 - 32))
     )}}@media(max-width: 81em){.img{border-bottom-right-radius:calc(
       1.2rem + 0.4 *
         ((100vw - (32rem)) / (129.6 - 32))
-    )}}.img img{max-width:100%;vertical-align:top}.img i{position:absolute;bottom:10%;left:5%}.img i svg{width:2rem;height:2rem}.img i svg path{fill:#030309}.img::before{transition:opacity .3s ease 0s;position:absolute;background-color:rgba(0,0,0,.2);top:0;left:0;width:100%;height:100%}@media(any-hover: hover){.img::before{content:""}}.title{margin-top:2rem;font-size:2.4rem;color:#fff8f8;font-weight:700;text-decoration:underline;transition:color .3s ease 0s;letter-spacing:.1rem}@media(max-width: 81em){.title{margin-top:calc(
+    )}}.img img{max-width:100%;vertical-align:top}.img i{position:absolute;bottom:10%;left:5%}.img i svg{width:2rem;height:2rem}.img i svg path{fill:#030309}.img::before{transition:opacity .3s ease 0s;position:absolute;background-color:rgba(0,0,0,.2);top:0;left:0;width:100%;height:100%}@media(any-hover: hover){.img::before{content:""}}.title{margin-top:2rem;font-size:2.4rem;color:#fff8f8;font-weight:700;transition:color .3s ease 0s;letter-spacing:.1rem}@media(max-width: 81em){.title{margin-top:calc(
       1.2rem + 0.8 *
         ((100vw - (32rem)) / (129.6 - 32))
     )}}@media(max-width: 81em){.title{font-size:calc(

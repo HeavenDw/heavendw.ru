@@ -1,8 +1,17 @@
 $mainColor: #fff8f8;
 $firstColor: #030309;
 $secondColor: rgba(0, 0, 0, 0.2);
-$thirdColor: #ebe45e;
+$thirdColor: #eeff00;
 $fourColor: rgba(58, 158, 253, 0.1);
+
+[data-theme='dark'] {
+  $mainColor: #fff8f8;
+  $firstColor: red;
+  $secondColor: rgba(0, 0, 0, 0.2);
+  $thirdColor: #eeff00;
+  $fourColor: rgba(58, 158, 253, 0.1);
+}
+
 $minWidth: 32;
 $maxWidthContainer: 126.6; // Максимальная ширина контейнера
 $containerPadding: 3;

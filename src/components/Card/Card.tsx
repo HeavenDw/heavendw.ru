@@ -12,7 +12,7 @@ const Card: FC<CardProps> = ({ href, title, description, imgSrc }) => {
   return (
     <a target="_blank" href={href} className={styles.root}>
       <div className={styles.img}>
-        <img src={process.env.PUBLIC_URL + '/sites' + imgSrc} alt={title} />
+        <img src={process.env.PUBLIC_URL + imgSrc} alt={title} />
         <i>
           <svg xmlns="http://www.w3.org/2000/svg">
             <path

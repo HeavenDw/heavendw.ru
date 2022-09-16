@@ -1,5 +1,6 @@
 @import '../../scss/variables';
 
 .app {
+  padding-top: 10rem;
   @include adaptive-value('padding-bottom', 5, 3, $fullWidthContainer, $minWidth, 'rem');
 }

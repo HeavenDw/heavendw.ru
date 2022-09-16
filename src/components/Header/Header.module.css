@@ -1,10 +1,4 @@
-.header{display:flex;justify-content:space-between;align-items:center;padding-top:5rem;padding-bottom:3rem}@media(max-width: 81em){.header{padding-top:calc(
-      2rem + 3 *
-        ((100vw - (32rem)) / (129.6 - 32))
-    )}}@media(max-width: 81em){.header{padding-bottom:calc(
-      1.5rem + 1.5 *
-        ((100vw - (32rem)) / (129.6 - 32))
-    )}}.title{font-size:6rem;font-weight:800;letter-spacing:.05em}@media(max-width: 81em){.title{font-size:calc(
+.header{background-color:#0b0b24;position:fixed;border-bottom:1px solid #fff;top:0;left:0;max-height:8rem;width:100%;z-index:10;padding:1rem 0}.container{display:flex;justify-content:space-between;align-items:center}.title{font-size:6rem;font-weight:800;letter-spacing:.05em}@media(max-width: 81em){.title{font-size:calc(
       2.8rem + 3.2 *
         ((100vw - (32rem)) / (129.6 - 32))
-    )}}.img img{max-width:100%;max-height:10rem}
+    )}}.img img{max-width:100%;max-height:6rem}
