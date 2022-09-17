@@ -1,13 +1,13 @@
 :root {
-  --background: white;
-  --text-primary: black;
-  --text-secondary: royalblue;
-  --accent: purple;
+  --background: #fff8f8;
+  --text-primary: #030309;
+  --card-bg: rgba(58, 158, 253, 0.5);
+  --hover: #501900;
 }
 
 [data-theme='dark'] {
-  --background: black;
-  --text-primary: white;
-  --text-secondary: grey;
-  --accent: darkred;
+  --background: #030309;
+  --text-primary: #fff8f8;
+  --card-bg: rgba(58, 158, 253, 0.1);
+  --hover: #eeff00;
 }
