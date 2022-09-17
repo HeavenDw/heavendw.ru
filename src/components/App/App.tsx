@@ -1,26 +1,38 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import styles from './App.module.css';
 import Header from '../Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import PortfolioPage from '../../pages/PortfolioPage';
 import AboutPage from '../../pages/AboutPage';
-import useLocalStorage from 'use-local-storage';
+import { useAppDispatch, useAppSelector } from '../../hooks';
+import { changeTheme } from '../../redux/Slices/themeSlice';
 
 const App: FC = () => {
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+  const dispatch = useAppDispatch();
 
-  const switchTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-  };
+  useEffect(() => {
+    const themeFromLS = localStorage.getItem('theme');
+    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (!themeFromLS) {
+      if (defaultDark) {
+        localStorage.setItem('theme', 'dark');
+        dispatch(changeTheme('dark'));
+      } else {
+        localStorage.setItem('theme', 'light');
+        dispatch(changeTheme('light'));
+      }
+    } else {
+      dispatch(changeTheme(themeFromLS));
+    }
+  }, []);
+
+  const theme = useAppSelector((state) => state.themeSlice.theme);
 
   return (
     <div className="app" data-theme={theme}>
       <Header />
 
       <main className={`${styles.app} _container`}>
-        <button onClick={switchTheme}>Switch theme</button>
         <Routes>
           <Route path="/" element={<PortfolioPage />} />
           <Route path="/about" element={<AboutPage />} />

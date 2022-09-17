@@ -1,0 +1,1 @@
+.theme{display:flex;justify-content:center;align-items:center;border-radius:50%;cursor:pointer;transition:all .3s ease 0s;width:40px;height:40px}@media(any-hover: hover){.theme:hover{background-color:#5f5b5b}}
