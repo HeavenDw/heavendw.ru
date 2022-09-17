@@ -32,7 +32,7 @@ const App: FC = () => {
     <div className="app" data-theme={theme}>
       <Header />
 
-      <main className={`${styles.app} _container`}>
+      <main className={`${styles.app} _container main`}>
         <Routes>
           <Route path="/" element={<PortfolioPage />} />
           <Route path="/about" element={<AboutPage />} />

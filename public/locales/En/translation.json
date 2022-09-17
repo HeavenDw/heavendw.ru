@@ -6,5 +6,7 @@
   "langEn": "English",
   "langRu": "Russian",
   "singlePageApp": "Single Page Applications",
-  "HTMLsites": "HTML Sites"
+  "HTMLsites": "HTML Sites",
+  "themeLight": "Light mode",
+  "themeDark": "Dark mode"
 }

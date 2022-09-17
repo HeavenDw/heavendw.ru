@@ -3,6 +3,16 @@
   align-items: center;
   gap: 10px;
   color: #fff;
+  @media (max-width: 1023px) {
+    span {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    span {
+      display: inline-block;
+    }
+  }
   button {
     display: flex;
     align-items: center;
@@ -11,6 +21,10 @@
     transition: all 0.3s ease 0s;
     background-color: transparent;
     color: #fff;
+    &.active {
+      color: #eeff00;
+      font-weight: bold;
+    }
   }
 }
 

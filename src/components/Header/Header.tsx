@@ -1,32 +1,37 @@
-import React, { FC } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import React, { FC, useEffect, useState } from 'react';
 import Languages from '../Languages/Languages';
+import Logo from '../Logo/Logo';
+import Navigation from '../Navigation/Navigation';
 import Theme from '../Theme/Theme';
 import styles from './Header.module.css';
 
 const Header: FC = () => {
-  const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isOpen]);
 
   return (
     <header className={styles.header}>
       <div className={`${styles.container} _container`}>
-        <ul>
-          <li>
-            <Link to="/">{t('portfolio')}</Link>
-          </li>
-          <li>
-            <Link to="/about">{t('about')}</Link>
-          </li>
-          <li>
-            <Link to="/contacts">{t('contacts')}</Link>
-          </li>
-        </ul>
-        <Theme />
-        <Languages />
-        <div className={styles.img}>
-          <img src={process.env.PUBLIC_URL + '/logo.png'} alt="site logo" />
+        <Logo />
+        <div className={isOpen ? `${styles.menu} ${styles.active}` : `${styles.menu}`}>
+          <Navigation setIsOpen={setIsOpen} />
+          <Theme setIsOpen={setIsOpen} />
+          <Languages />
         </div>
+        <button
+          className={isOpen ? `${styles.burger} ${styles.active}` : `${styles.burger}`}
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}>
+          <span></span>
+        </button>
       </div>
     </header>
   );

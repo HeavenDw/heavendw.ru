@@ -1,0 +1,28 @@
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  li {
+    cursor: pointer;
+    @media (any-hover: hover) {
+      &:hover {
+        a {
+          color: #eeff00;
+        }
+      }
+    }
+    a {
+      transition: all 0.3s ease 0s;
+      padding: 1rem 1rem;
+      color: #fff8f8;
+      &.active {
+        color: #eeff00;
+        font-weight: bold;
+      }
+    }
+  }
+}

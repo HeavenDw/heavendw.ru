@@ -2,7 +2,7 @@
 
 .title {
   font-weight: 700;
-  font-size: 4rem;
+  @include adaptive-value('font-size', 4, 3, $fullWidthContainer, $minWidth, 'rem');
   margin: 0 0 2rem 0;
 }
 

@@ -6,5 +6,7 @@
   "langEn": "Английский",
   "langRu": "Русский",
   "singlePageApp": "Одностраничные приложения",
-  "HTMLsites": "HTML Сайты"
+  "HTMLsites": "HTML Сайты",
+  "themeLight": "Светлая тема",
+  "themeDark": "Темная тема"
 }

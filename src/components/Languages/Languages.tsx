@@ -17,8 +17,8 @@ const Languages: FC = () => {
       <span>{t('language')}:</span>
       <button
         key={'En'}
-        style={{ fontWeight: i18n.resolvedLanguage === 'En' ? 'bold' : 'normal' }}
         type="submit"
+        className={i18n.resolvedLanguage === 'En' ? styles.active : ''}
         onClick={() => setLanguage('En')}>
         <ReactCountryFlag
           countryCode="US"
@@ -34,7 +34,7 @@ const Languages: FC = () => {
 
       <button
         key={'Ru'}
-        style={{ fontWeight: i18n.resolvedLanguage === 'Ru' ? 'bold' : 'normal' }}
+        className={i18n.resolvedLanguage === 'Ru' ? styles.active : ''}
         type="submit"
         onClick={() => setLanguage('Ru')}>
         <ReactCountryFlag
