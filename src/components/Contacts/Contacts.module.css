@@ -1,0 +1,1 @@
+.contacts{display:flex;flex-direction:column;gap:2rem}.contacts a{max-width:30rem;display:inline-flex;align-items:center;gap:1.5rem;color:var(--text-primary);fill:var(--text-primary);transition:all .3s ease 0s}@media(any-hover: hover){.contacts a:hover{color:var(--hover);fill:var(--hover)}}.contacts a svg{width:3.2rem;height:3.2rem}
