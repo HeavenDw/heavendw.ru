@@ -6,6 +6,7 @@ import PortfolioPage from '../../pages/PortfolioPage';
 import AboutPage from '../../pages/AboutPage';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { changeTheme } from '../../redux/Slices/themeSlice';
+import ContactsPage from '../../pages/ContactsPage';
 
 const App: FC = () => {
   const dispatch = useAppDispatch();
@@ -36,6 +37,7 @@ const App: FC = () => {
         <Routes>
           <Route path="/" element={<PortfolioPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
       </main>
     </div>

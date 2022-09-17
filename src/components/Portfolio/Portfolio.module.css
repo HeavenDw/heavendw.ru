@@ -1,4 +1,4 @@
-.title{font-weight:700;font-size:4rem;margin:0 0 2rem 0}@media(max-width: 81em){.title{font-size:calc(
+.loader{display:flex;justify-content:center;align-items:center}.title{font-weight:700;font-size:4rem;margin:0 0 2rem 0}@media(max-width: 81em){.title{font-size:calc(
       3rem + 1 *
         ((100vw - (32rem)) / (129.6 - 32))
     )}}.grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;margin:0 0 6rem 0}@media(max-width: 61.998em){.grid{gap:16px;grid-template-columns:repeat(2, 1fr)}}@media(max-width: 29.998em){.grid{gap:12px;grid-template-columns:1fr}}

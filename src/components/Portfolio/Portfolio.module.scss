@@ -1,5 +1,11 @@
 @import '../../scss/variables';
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   font-weight: 700;
   @include adaptive-value('font-size', 4, 3, $fullWidthContainer, $minWidth, 'rem');

@@ -5,6 +5,7 @@ import { useGetAppsQuery, useGetHtmlSitesQuery } from '../../redux/Api/portfolio
 import { CardItem } from '../../@types/cardTypes';
 import { useTranslation } from 'react-i18next';
 import Cookies from 'js-cookie';
+import { Dna } from 'react-loader-spinner';
 
 const Portfolio: FC = () => {
   const { t } = useTranslation();
@@ -13,7 +14,18 @@ const Portfolio: FC = () => {
   const { data: appsList } = useGetAppsQuery(language);
 
   if (isLoading || isFetching || error) {
-    return <h1>Loading...</h1>;
+    return (
+      <div className={styles.loader}>
+        <Dna
+          visible={true}
+          height="200"
+          width="200"
+          ariaLabel="dna-loading"
+          wrapperStyle={{}}
+          wrapperClass="dna-wrapper"
+        />
+      </div>
+    );
   }
 
   return (
