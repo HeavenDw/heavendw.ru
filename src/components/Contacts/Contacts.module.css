@@ -1,1 +1,19 @@
-.contacts{display:flex;flex-direction:column;gap:2rem}.contacts a{max-width:30rem;display:inline-flex;align-items:center;gap:1.5rem;color:var(--text-primary);fill:var(--text-primary);transition:all .3s ease 0s}@media(any-hover: hover){.contacts a:hover{color:var(--hover);fill:var(--hover)}}.contacts a svg{width:3.2rem;height:3.2rem}
+.contacts{display:inline-flex;flex-direction:column;gap:2rem;background-color:var(--card-bg);padding-top:2rem;padding-bottom:2rem;padding-left:2rem;padding-right:2rem;border-top-left-radius:1.6rem;border-bottom-right-radius:1.6rem}@media(max-width: 81em){.contacts{padding-top:calc(
+      1.2rem + 0.8 *
+        ((100vw - (32rem)) / (129.6 - 32))
+    )}}@media(max-width: 81em){.contacts{padding-bottom:calc(
+      1.2rem + 0.8 *
+        ((100vw - (32rem)) / (129.6 - 32))
+    )}}@media(max-width: 81em){.contacts{padding-left:calc(
+      1.2rem + 0.8 *
+        ((100vw - (32rem)) / (129.6 - 32))
+    )}}@media(max-width: 81em){.contacts{padding-right:calc(
+      1.2rem + 0.8 *
+        ((100vw - (32rem)) / (129.6 - 32))
+    )}}@media(max-width: 81em){.contacts{border-top-left-radius:calc(
+      1.2rem + 0.4 *
+        ((100vw - (32rem)) / (129.6 - 32))
+    )}}@media(max-width: 81em){.contacts{border-bottom-right-radius:calc(
+      1.2rem + 0.4 *
+        ((100vw - (32rem)) / (129.6 - 32))
+    )}}.contacts a{display:inline-flex;align-items:center;gap:1.5rem;color:var(--text-primary);transition:all .3s ease 0s}@media(any-hover: hover){.contacts a:hover{color:var(--hover)}}.contacts a img{width:3.2rem;height:3.2rem}

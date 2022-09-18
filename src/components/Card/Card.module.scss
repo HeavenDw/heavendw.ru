@@ -120,6 +120,7 @@
 }
 
 .text {
+  font-family: 'Roboto';
   margin: 0.8rem 0 0 0;
   line-height: 1.6;
   @include adaptive-value('font-size', 1.6, 1.4, $fullWidthContainer, $minWidth, 'rem');

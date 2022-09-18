@@ -28,7 +28,7 @@
     )}}@media(max-width: 81em){.title{font-size:calc(
       2rem + 0.4 *
         ((100vw - (32rem)) / (129.6 - 32))
-    )}}.title::after{content:"";position:absolute;left:0;bottom:-2px;background-color:var(--hover);height:1px;width:100%;opacity:0;transition:all .3s ease 0s}.text{margin:.8rem 0 0 0;line-height:1.6;font-size:1.6rem;color:var(--text-primary);transition:color .3s ease 0s}@media(max-width: 81em){.text{font-size:calc(
+    )}}.title::after{content:"";position:absolute;left:0;bottom:-2px;background-color:var(--hover);height:1px;width:100%;opacity:0;transition:all .3s ease 0s}.text{font-family:"Roboto";margin:.8rem 0 0 0;line-height:1.6;font-size:1.6rem;color:var(--text-primary);transition:color .3s ease 0s}@media(max-width: 81em){.text{font-size:calc(
       1.4rem + 0.2 *
         ((100vw - (32rem)) / (129.6 - 32))
     )}}

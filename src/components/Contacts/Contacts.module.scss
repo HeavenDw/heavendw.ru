@@ -1,22 +1,42 @@
+@import '../../scss/variables';
+
 .contacts {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: var(--card-bg);
+  @include adaptive-value('padding-top', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
+  @include adaptive-value('padding-bottom', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
+  @include adaptive-value('padding-left', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
+  @include adaptive-value('padding-right', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
+  @include adaptive-value(
+    'border-top-left-radius',
+    1.6,
+    1.2,
+    $fullWidthContainer,
+    $minWidth,
+    'rem'
+  );
+  @include adaptive-value(
+    'border-bottom-right-radius',
+    1.6,
+    1.2,
+    $fullWidthContainer,
+    $minWidth,
+    'rem'
+  );
   a {
-    max-width: 30rem;
     display: inline-flex;
     align-items: center;
     gap: 1.5rem;
     color: var(--text-primary);
-    fill: var(--text-primary);
     transition: all 0.3s ease 0s;
     @media (any-hover: hover) {
       &:hover {
         color: var(--hover);
-        fill: var(--hover);
       }
     }
-    svg {
+    img {
       width: 3.2rem;
       height: 3.2rem;
     }
