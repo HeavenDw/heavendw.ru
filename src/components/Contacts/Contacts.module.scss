@@ -5,6 +5,7 @@
   flex-direction: column;
   gap: 2rem;
   background-color: var(--card-bg);
+  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
   @include adaptive-value('padding-top', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
   @include adaptive-value('padding-bottom', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
   @include adaptive-value('padding-left', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');

@@ -1,6 +1,7 @@
 @import '../../scss/variables';
 
 .root {
+  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
   background-color: var(--card-bg);
   @include adaptive-value('padding-top', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
   @include adaptive-value('padding-bottom', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
@@ -27,6 +28,7 @@
 
   @media (any-hover: hover) {
     &:hover {
+      box-shadow: none;
       border: 2px solid var(--hover);
       .img {
         &::before {

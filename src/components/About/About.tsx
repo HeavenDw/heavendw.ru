@@ -1,5 +1,61 @@
 import React from 'react';
+import Skill from '../Skill/Skill';
 import styles from './About.module.css';
+
+const skillsList = [
+  {
+    id: 1,
+    imgSrc: '/icons/html5.svg',
+    text: 'HTML5',
+  },
+  {
+    id: 2,
+    imgSrc: '/icons/css3.svg',
+    text: 'CSS3',
+  },
+  {
+    id: 3,
+    imgSrc: '/icons/sass.svg',
+    text: 'SCSS',
+  },
+
+  {
+    id: 4,
+    imgSrc: '/icons/tailwind.svg',
+    text: 'Tailwind',
+  },
+  {
+    id: 5,
+    imgSrc: '/icons/js.svg',
+    text: 'JavaScript',
+  },
+  {
+    id: 6,
+    imgSrc: '/icons/git.svg',
+    text: 'Git',
+  },
+  {
+    id: 7,
+    imgSrc: '/icons/github.svg',
+    text: 'Github',
+  },
+  {
+    id: 8,
+    imgSrc: '/icons/react.svg',
+    text: 'React',
+  },
+  {
+    id: 9,
+    imgSrc: '/icons/typescript.svg',
+    text: 'TypeScript',
+  },
+
+  {
+    id: 10,
+    imgSrc: '/icons/redux.svg',
+    text: 'Redux / Redux Toolkit',
+  },
+];
 
 const About = () => {
   return (
@@ -31,36 +87,9 @@ const About = () => {
         <div className={styles.skills}>
           <span>Навыки:</span>
           <ul className={styles.list}>
-            <li>
-              <img src={process.env.PUBLIC_URL + '/icons/html5.svg'} alt="html5 icon" />
-              HTML5
-            </li>
-            <li>
-              <img src={process.env.PUBLIC_URL + '/icons/css3.svg'} alt="css3 icon" />
-              CSS3 / <img src={process.env.PUBLIC_URL + '/icons/sass.svg'} alt="sass icon" /> SCSS
-            </li>
-            <li>
-              <img src={process.env.PUBLIC_URL + '/icons/tailwind.svg'} alt="tailwind icon" />{' '}
-              Tailwind
-            </li>
-            <li>
-              <img src={process.env.PUBLIC_URL + '/icons/js.svg'} alt="js icon" /> JavaScript
-            </li>
-            <li>
-              <img src={process.env.PUBLIC_URL + '/icons/git.svg'} alt="git icon" /> Git /{' '}
-              <img src={process.env.PUBLIC_URL + '/icons/github.svg'} alt="github icon" /> Github
-            </li>
-            <li>
-              <img src={process.env.PUBLIC_URL + '/icons/react.svg'} alt="react icon" /> React
-            </li>
-            <li>
-              <img src={process.env.PUBLIC_URL + '/icons/typescript.svg'} alt="typescript icon" />{' '}
-              TypeScript
-            </li>
-            <li>
-              <img src={process.env.PUBLIC_URL + '/icons/redux.svg'} alt="redux icon" /> Redux /
-              Redux Toolkit
-            </li>
+            {skillsList.map((skill) => (
+              <Skill key={skill.id} imgSrc={skill.imgSrc} text={skill.text} />
+            ))}
           </ul>
         </div>
       </div>

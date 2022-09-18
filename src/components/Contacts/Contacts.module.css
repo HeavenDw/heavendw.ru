@@ -1,4 +1,4 @@
-.contacts{display:inline-flex;flex-direction:column;gap:2rem;background-color:var(--card-bg);padding-top:2rem;padding-bottom:2rem;padding-left:2rem;padding-right:2rem;border-top-left-radius:1.6rem;border-bottom-right-radius:1.6rem}@media(max-width: 81em){.contacts{padding-top:calc(
+.contacts{display:inline-flex;flex-direction:column;gap:2rem;background-color:var(--card-bg);box-shadow:5px 5px 2px 0px rgba(0,0,0,.5);padding-top:2rem;padding-bottom:2rem;padding-left:2rem;padding-right:2rem;border-top-left-radius:1.6rem;border-bottom-right-radius:1.6rem}@media(max-width: 81em){.contacts{padding-top:calc(
       1.2rem + 0.8 *
         ((100vw - (32rem)) / (129.6 - 32))
     )}}@media(max-width: 81em){.contacts{padding-bottom:calc(
