@@ -16,4 +16,4 @@
     )}}@media(max-width: 81em){.contacts{border-bottom-right-radius:calc(
       1.2rem + 0.4 *
         ((100vw - (32rem)) / (129.6 - 32))
-    )}}.contacts a{display:inline-flex;align-items:center;gap:1.5rem;color:var(--text-primary);transition:all .3s ease 0s}@media(any-hover: hover){.contacts a:hover{color:var(--hover)}}.contacts a img{width:3.2rem;height:3.2rem}
+    )}}.contacts a{font-family:"Roboto";display:inline-flex;align-items:center;gap:1.5rem;color:var(--text-primary);transition:all .3s ease 0s}@media(any-hover: hover){.contacts a:hover{color:var(--hover)}}.contacts a img{width:3.2rem;height:3.2rem}

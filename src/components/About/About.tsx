@@ -13,9 +13,12 @@ const About = () => {
           </p>
           <p>
             Занимаюсь веб-разработкой с <b>2020 года</b>. Сначала учился верстать сайты с
-            применением html5, scss, jquery. Потом с jquery перешел на чистый JS. Начал использовать
-            cms Wordpress и базу данных sql. Разработал несколько коммерческих проектов на фрилансе
-            (одностраничные сайты с посадкой на wordpress).
+            применением html5, scss, jquery. Потом с jquery перешел на чистый JavaScript. Начал
+            использовать cms Wordpress и базу данных sql.
+          </p>
+          <p>
+            Разработал несколько коммерческих проектов на фрилансе (одностраничные сайты с посадкой
+            на wordpress).
           </p>
           <p>Сейчас изучаю и работаю с react, typescript, redux.</p>
           <p>
@@ -62,11 +65,17 @@ const About = () => {
         </div>
       </div>
       <div className={styles.images}>
-        <div>
+        <div className={styles.img}>
           <img src={process.env.PUBLIC_URL + '/photos/01.jpg'} alt="photo01" />
         </div>
-        <div>
+        <div className={styles.img}>
           <img src={process.env.PUBLIC_URL + '/photos/02.jpg'} alt="photo02" />
+        </div>
+        <div className={styles.img}>
+          <img src={process.env.PUBLIC_URL + '/photos/03.jpg'} alt="photo03" />
+        </div>
+        <div className={styles.img}>
+          <img src={process.env.PUBLIC_URL + '/photos/04.jpg'} alt="photo04" />
         </div>
       </div>
     </>

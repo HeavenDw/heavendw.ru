@@ -73,13 +73,11 @@
 
 .images {
   margin: 2rem 0 0 0;
-  display: flex;
   gap: 2rem;
-  @media (max-width: 767px) {
-    flex-direction: column;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   img {
-    max-width: 34rem;
+    max-width: 100%;
     @include adaptive-value(
       'border-top-left-radius',
       1.6,
@@ -96,8 +94,5 @@
       $minWidth,
       'rem'
     );
-    @media (max-width: 767px) {
-      max-width: 100%;
-    }
   }
 }
