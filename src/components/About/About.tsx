@@ -83,7 +83,7 @@ const About = () => {
         </div>
 
         <div className={styles.skills}>
-          <span>Навыки:</span>
+          <span>{t('skills')}:</span>
           <ul className={styles.list}>
             {skillsList.map((skill) => (
               <Skill key={skill.id} imgSrc={skill.imgSrc} text={skill.text} />
