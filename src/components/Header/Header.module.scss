@@ -3,7 +3,7 @@
 .header {
   background-color: #0b0b24;
   position: fixed;
-  border-bottom: 1px solid var(--text-primary);
+  border-bottom: 1px solid #f2a640;
   top: 0;
   left: 0;
   max-height: 8rem;
@@ -16,13 +16,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5rem;
 }
 
 .menu {
   flex: 1 1 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   @media (max-width: 767px) {
     padding: 2rem 0;
     gap: 3rem;

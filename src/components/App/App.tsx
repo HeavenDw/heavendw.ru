@@ -7,6 +7,7 @@ import AboutPage from '../../pages/AboutPage';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { changeTheme } from '../../redux/Slices/themeSlice';
 import ContactsPage from '../../pages/ContactsPage';
+import Footer from '../Footer/Footer';
 
 const App: FC = () => {
   const dispatch = useAppDispatch();
@@ -40,6 +41,8 @@ const App: FC = () => {
           <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
       </main>
+
+      <Footer />
     </div>
   );
 };
