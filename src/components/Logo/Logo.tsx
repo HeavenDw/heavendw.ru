@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Logo.module.css';
 
 const Logo = () => {
   return (
-    <div className={styles.img}>
+    <Link to="/" className={styles.img}>
       <img src={process.env.PUBLIC_URL + '/logo.png'} alt="site logo" />
-    </div>
+    </Link>
   );
 };
 

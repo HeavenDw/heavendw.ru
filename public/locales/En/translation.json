@@ -8,5 +8,14 @@
   "singlePageApp": "Single Page Applications",
   "HTMLsites": "HTML Sites",
   "themeLight": "Light mode",
-  "themeDark": "Dark mode"
+  "themeDark": "Dark mode",
+  "about0": "Hello!",
+  "about1": "My name is ",
+  "about2": "Otinov Konstantin",
+  "about3": ", 28 y/o. Living in Russia, my hometown is Perm.",
+  "about4": "I have been a web developer since 2020. First i made sites with html5, scss, jquery. Later i changed jquery to pure JavaScript. Started using cms Wordress and sql database.",
+  "about5": "Developed several freelance commercial project (single-page sites with wordpress).",
+  "about6": "Now i'm learning and working with react, typescript, redux.",
+  "about7": "Looking for a job! (Frontend developer).",
+  "about8": "Languages: Russian, English"
 }

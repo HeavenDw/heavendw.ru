@@ -6,6 +6,13 @@
   align-items: center;
 }
 
+.work {
+  font-weight: 600;
+  @include adaptive-value('font-size', 3, 2, $fullWidthContainer, $minWidth, 'rem');
+  margin: 0 0 2rem 0;
+  text-decoration: underline;
+}
+
 .title {
   font-weight: 700;
   @include adaptive-value('font-size', 4, 3, $fullWidthContainer, $minWidth, 'rem');

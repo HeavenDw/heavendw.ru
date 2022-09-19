@@ -30,6 +30,7 @@ const Portfolio: FC = () => {
 
   return (
     <>
+      <h2 className={styles.work}>{t('about7')}</h2>
       <h3 className={styles.title}>{t('singlePageApp')}</h3>
       <div className={styles.grid}>
         {appsList?.map((app: CardItem) => {

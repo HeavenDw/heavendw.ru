@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Skill from '../Skill/Skill';
 import styles from './About.module.css';
 
@@ -58,30 +59,27 @@ const skillsList = [
 ];
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className={styles.about}>
         <div className={styles.info}>
-          <span>Приветствую!</span>
+          <span>{t('about0')}</span>
 
           <p>
-            Меня зовут <b>Отинов Константин</b>, мне 28 лет. Живу в России, город Пермь.
+            {t('about1')}
+            <b>{t('about2')}</b>
+            {t('about3')}
           </p>
+          <p>{t('about4')}</p>
+          <p>{t('about5')}</p>
+          <p>{t('about6')}</p>
           <p>
-            Занимаюсь веб-разработкой с <b>2020 года</b>. Сначала учился верстать сайты с
-            применением html5, scss, jquery. Потом с jquery перешел на чистый JavaScript. Начал
-            использовать cms Wordpress и базу данных sql.
-          </p>
-          <p>
-            Разработал несколько коммерческих проектов на фрилансе (одностраничные сайты с посадкой
-            на wordpress).
-          </p>
-          <p>Сейчас изучаю и работаю с react, typescript, redux.</p>
-          <p>
-            <b>Ищу работу для frontend разработчика.</b>
+            <b>{t('about7')}</b>
           </p>
 
-          <p>Языки: Русский, Английский</p>
+          <p>{t('about8')}</p>
         </div>
 
         <div className={styles.skills}>
