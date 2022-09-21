@@ -3,7 +3,7 @@
 .contacts {
   display: inline-flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   background-color: var(--card-bg);
   box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
   @include adaptive-value('padding-top', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
@@ -33,10 +33,34 @@
     gap: 1.5rem;
     color: var(--text-primary);
     transition: all 0.3s ease 0s;
+    border: 2px solid transparent;
+    padding: 1rem 0;
+    @include adaptive-value('padding-left', 2, 1, $fullWidthContainer, $minWidth, 'rem');
+    @include adaptive-value('padding-right', 2, 1, $fullWidthContainer, $minWidth, 'rem');
+    transition: all 0.3s ease 0s;
+    @include adaptive-value(
+      'border-top-left-radius',
+      1.6,
+      1.2,
+      $fullWidthContainer,
+      $minWidth,
+      'rem'
+    );
+    @include adaptive-value(
+      'border-bottom-right-radius',
+      1.6,
+      1.2,
+      $fullWidthContainer,
+      $minWidth,
+      'rem'
+    );
     @media (any-hover: hover) {
       &:hover {
-        color: var(--hover);
+        border-color: var(--text-primary);
       }
+    }
+    @media (max-width: 424px) {
+      font-size: 1.4rem;
     }
     img {
       width: 3.2rem;
