@@ -30,7 +30,6 @@ const Portfolio: FC = () => {
 
   return (
     <>
-      <h2 className={styles.work}>{t('about7')}</h2>
       <h3 className={styles.title}>{t('singlePageApp')}</h3>
       <div className={styles.grid}>
         {appsList?.map((app: CardItem) => {
@@ -39,8 +38,9 @@ const Portfolio: FC = () => {
               key={app.title}
               title={app.title}
               description={app.description}
-              href={app.href}
+              siteLink={app.href}
               imgSrc={app.imgSrc}
+              githubLink={app.githubLink}
             />
           );
         })}
@@ -53,8 +53,9 @@ const Portfolio: FC = () => {
               key={site.title}
               title={site.title}
               description={site.description}
-              href={site.href}
+              siteLink={site.href}
               imgSrc={site.imgSrc}
+              githubLink={site.githubLink}
             />
           );
         })}

@@ -1,6 +1,10 @@
 @import '../../scss/variables';
 
 .root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
   box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
   background-color: var(--card-bg);
   @include adaptive-value('padding-top', 2, 1.2, $fullWidthContainer, $minWidth, 'rem');
@@ -35,6 +39,13 @@
           opacity: 0;
         }
       }
+    }
+  }
+}
+
+.siteLink {
+  @media (any-hover: hover) {
+    &:hover {
       .title,
       .text {
         color: var(--hover);
@@ -128,4 +139,17 @@
   @include adaptive-value('font-size', 1.6, 1.4, $fullWidthContainer, $minWidth, 'rem');
   color: var(--text-primary);
   transition: color 0.3s ease 0s;
+}
+
+.link {
+  align-self: flex-start;
+  color: var(--text-primary);
+  transition: color 0.3s ease 0s;
+  font-family: 'Roboto';
+  @include adaptive-value('font-size', 1.6, 1.4, $fullWidthContainer, $minWidth, 'rem');
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--hover);
+    }
+  }
 }

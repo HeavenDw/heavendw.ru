@@ -3,4 +3,5 @@ export interface CardItem {
   title: string
   description: string
   imgSrc: string
+  githubLink: string
 }
