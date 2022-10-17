@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Skill from '../Skill/Skill';
-import styles from './About.module.css';
+import styles from './About.module.scss';
 
 const skillsList = [
   {

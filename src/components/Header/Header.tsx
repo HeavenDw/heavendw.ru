@@ -1,9 +1,10 @@
 import React, { FC, useEffect, useState } from 'react';
+
 import Languages from '../Languages/Languages';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 import Theme from '../Theme/Theme';
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 
 const Header: FC = () => {
   const [isOpen, setIsOpen] = useState(false);

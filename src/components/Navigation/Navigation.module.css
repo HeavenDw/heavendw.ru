@@ -1,1 +1,0 @@
-.links{display:flex;align-items:center;gap:1rem}@media(max-width: 767px){.links{flex-direction:column;gap:2rem}}.links li{cursor:pointer}@media(any-hover: hover){.links li:hover a{color:#ef0}}.links li a{transition:all .3s ease 0s;padding:1rem 1rem;color:#fff8f8}.links li a.active{color:#ef0;font-weight:bold}

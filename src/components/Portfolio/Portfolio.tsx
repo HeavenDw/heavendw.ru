@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
-import Card from '../Card/Card';
-import styles from './Portfolio.module.css';
-import { useGetAppsQuery, useGetHtmlSitesQuery } from '../../redux/Api/portfolioApi';
-import { CardItem } from '../../@types/cardTypes';
 import { useTranslation } from 'react-i18next';
 import Cookies from 'js-cookie';
 import { Dna } from 'react-loader-spinner';
+
+import Card from '../Card/Card';
+import styles from './Portfolio.module.scss';
+import { useGetAppsQuery, useGetHtmlSitesQuery } from '../../redux/Api/portfolioApi';
+import { CardItem } from '../../@types/cardTypes';
 
 const Portfolio: FC = () => {
   const { t } = useTranslation();
@@ -30,7 +31,8 @@ const Portfolio: FC = () => {
 
   return (
     <>
-      <h3 className={styles.title}>{t('singlePageApp')}</h3>
+      <h1 className={styles.title}>{t('projects')}</h1>
+      <h3 className={styles.subtitle}>{t('singlePageApp')}</h3>
       <div className={styles.grid}>
         {appsList?.map((app: CardItem) => {
           return (
@@ -45,7 +47,7 @@ const Portfolio: FC = () => {
           );
         })}
       </div>
-      <h3 className={styles.title}>{t('HTMLsites')}</h3>
+      <h3 className={styles.subtitle}>{t('HTMLsites')}</h3>
       <div className={styles.grid}>
         {htmlSites?.map((site: CardItem) => {
           return (

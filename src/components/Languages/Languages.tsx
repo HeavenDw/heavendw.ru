@@ -1,9 +1,8 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useAppDispatch } from '../../hooks';
 import ReactCountryFlag from 'react-country-flag';
 
-import styles from './Languages.module.css';
+import styles from './Languages.module.scss';
 
 const Languages: FC = () => {
   const { t, i18n } = useTranslation();

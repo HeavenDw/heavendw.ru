@@ -1,7 +1,8 @@
 import React, { FC, useEffect } from 'react';
-import styles from './App.module.css';
-import Header from '../Header/Header';
 import { Route, Routes } from 'react-router-dom';
+
+import styles from './App.module.scss';
+import Header from '../Header/Header';
 import PortfolioPage from '../../pages/PortfolioPage';
 import AboutPage from '../../pages/AboutPage';
 import { useAppDispatch, useAppSelector } from '../../hooks';

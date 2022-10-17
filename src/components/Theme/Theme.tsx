@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { changeTheme } from '../../redux/Slices/themeSlice';
-
-import styles from './Theme.module.css';
+import styles from './Theme.module.scss';
 
 interface ThemeProps {
   setIsOpen: (value: boolean) => void;

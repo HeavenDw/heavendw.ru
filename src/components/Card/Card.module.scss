@@ -136,9 +136,11 @@
   font-family: 'Roboto';
   margin: 0.8rem 0 0 0;
   line-height: 1.6;
+  letter-spacing: 0.02rem;
   @include adaptive-value('font-size', 1.6, 1.4, $fullWidthContainer, $minWidth, 'rem');
   color: var(--text-primary);
   transition: color 0.3s ease 0s;
+  white-space: pre-line;
 }
 
 .link {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Contact from '../Contact/Contact';
-import styles from './Contacts.module.css';
+import styles from './Contacts.module.scss';
 
 const contactsList = [
   {

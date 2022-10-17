@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
-import styles from './Navigation.module.css';
+
+import styles from './Navigation.module.scss';
 
 interface NavigationProps {
   setIsOpen: (value: boolean) => void;

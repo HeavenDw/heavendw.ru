@@ -54,6 +54,7 @@
     ]
   },
   "devDependencies": {
-    "@types/js-cookie": "^3.0.2"
+    "@types/js-cookie": "^3.0.2",
+    "sass": "^1.55.0"
   }
 }

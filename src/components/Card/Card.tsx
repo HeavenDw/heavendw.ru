@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './Card.module.css';
+import styles from './Card.module.scss';
 
 interface CardProps {
   siteLink: string;
