@@ -9,12 +9,13 @@
   p {
     line-height: 1.6;
   }
-  span {
-    font-weight: 700;
-  }
   @media (max-width: 767px) {
     flex-direction: column;
   }
+}
+
+.subtitle {
+  font-weight: 700;
 }
 
 .info,
@@ -52,7 +53,7 @@
 }
 
 .skills {
-  flex: 1 0 23rem;
+  flex: 1 0 34rem;
   .list {
     margin: 2rem 0 0 0;
     display: flex;
@@ -61,13 +62,8 @@
     li {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 1rem;
       white-space: nowrap;
-      img {
-        max-width: 100%;
-        width: 24px;
-        height: 24px;
-      }
     }
   }
 }

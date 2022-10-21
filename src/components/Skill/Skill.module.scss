@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0b24;
+  padding: 6px;
+  border-radius: 50%;
+  img {
+    max-width: 100%;
+    width: 24px;
+    height: 24px;
+  }
+}

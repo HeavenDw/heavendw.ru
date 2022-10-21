@@ -40,9 +40,9 @@ const Portfolio: FC = () => {
               key={app.title}
               title={app.title}
               description={app.description}
-              siteLink={app.href}
+              href={app.href}
               imgSrc={app.imgSrc}
-              githubLink={app.githubLink}
+              githubLinks={app.githubLinks}
             />
           );
         })}
@@ -55,9 +55,9 @@ const Portfolio: FC = () => {
               key={site.title}
               title={site.title}
               description={site.description}
-              siteLink={site.href}
+              href={site.href}
               imgSrc={site.imgSrc}
-              githubLink={site.githubLink}
+              githubLinks={site.githubLinks}
             />
           );
         })}

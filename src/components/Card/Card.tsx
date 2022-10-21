@@ -1,23 +1,19 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import { CardItem } from '../../@types/cardTypes';
 import styles from './Card.module.scss';
 
-interface CardProps {
-  siteLink: string;
-  title: string;
-  description: string;
-  imgSrc: string;
-  githubLink: string;
-}
-
-const Card: FC<CardProps> = ({ siteLink, title, description, imgSrc, githubLink }) => {
+const Card: FC<CardItem> = ({ href, title, description, imgSrc, githubLinks }) => {
   const { t } = useTranslation();
 
-  const linkWithoutHttps = githubLink.replace('https://', '');
+  const linksWithoutHttps = githubLinks.map((link) => link.replace('https://', ''));
+
+  //githubLink.replace('https://', '');
 
   return (
     <div className={styles.root}>
-      <a target="_blank" href={siteLink} className={styles.siteLink}>
+      <a target="_blank" rel="noreferrer" href={href} className={styles.siteLink}>
         <div className={styles.img}>
           <img src={process.env.PUBLIC_URL + imgSrc} alt={title} />
           <i>
@@ -35,10 +31,23 @@ const Card: FC<CardProps> = ({ siteLink, title, description, imgSrc, githubLink 
         <p className={styles.text}>{description}</p>
       </a>
 
-      <a target="_blank" href={githubLink} className={styles.link}>
-        {t('cardGithubLink')}
-        {linkWithoutHttps}
-      </a>
+      <div className={styles.links}>
+        {linksWithoutHttps.length === 1 ? (
+          <a target="_blank" rel="noreferrer" href={githubLinks[0]} className={styles.link}>
+            {t('cardGithubLink')} - {linksWithoutHttps[0]}
+          </a>
+        ) : (
+          <>
+            {t('cardGithubLink')}:
+            <a target="_blank" rel="noreferrer" href={githubLinks[0]} className={styles.link}>
+              Frontend - {linksWithoutHttps[0]}
+            </a>
+            <a target="_blank" rel="noreferrer" href={githubLinks[1]} className={styles.link}>
+              Backend - {linksWithoutHttps[1]}
+            </a>
+          </>
+        )}
+      </div>
     </div>
   );
 };

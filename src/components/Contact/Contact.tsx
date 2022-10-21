@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 
 interface ContactProps {
   link: string;
@@ -8,7 +8,7 @@ interface ContactProps {
 
 const Contact: FC<ContactProps> = ({ link, imgSrc, text }) => {
   return (
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" rel="noreferrer">
       <img src={process.env.PUBLIC_URL + imgSrc} alt={imgSrc} />
       {text}
     </a>

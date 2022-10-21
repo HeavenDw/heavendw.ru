@@ -1,15 +1,32 @@
 import React, { FC } from 'react';
 
-interface SkillProps {
-  imgSrc: string;
+import styles from './Skill.module.scss';
+
+interface SkillData {
+  id: number;
+  imgSrc?: string;
   text: string;
 }
 
-const Skill: FC<SkillProps> = ({ imgSrc, text }) => {
+interface SkillProps {
+  skills: SkillData[];
+}
+
+const Skill: FC<SkillProps> = ({ skills }) => {
   return (
     <li>
-      <img src={process.env.PUBLIC_URL + imgSrc} alt={imgSrc} />
-      {text}
+      {skills.map((skill) => {
+        return (
+          <div key={skill.id} className={`skill ${styles.root}`}>
+            {skill.imgSrc && (
+              <i className={styles.icon}>
+                <img src={process.env.PUBLIC_URL + skill.imgSrc} alt={skill.imgSrc} />
+              </i>
+            )}
+            <span>{skill.text}</span>
+          </div>
+        );
+      })}
     </li>
   );
 };

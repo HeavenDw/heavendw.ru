@@ -1,62 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
+import skillsList from '../../data/skillsList';
 import Skill from '../Skill/Skill';
 import styles from './About.module.scss';
-
-const skillsList = [
-  {
-    id: 1,
-    imgSrc: '/icons/html5.svg',
-    text: 'HTML5',
-  },
-  {
-    id: 2,
-    imgSrc: '/icons/css3.svg',
-    text: 'CSS3',
-  },
-  {
-    id: 3,
-    imgSrc: '/icons/sass.svg',
-    text: 'SCSS',
-  },
-
-  {
-    id: 4,
-    imgSrc: '/icons/tailwind.svg',
-    text: 'Tailwind',
-  },
-  {
-    id: 5,
-    imgSrc: '/icons/js.svg',
-    text: 'JavaScript',
-  },
-  {
-    id: 6,
-    imgSrc: '/icons/git.svg',
-    text: 'Git',
-  },
-  {
-    id: 7,
-    imgSrc: '/icons/github.svg',
-    text: 'Github',
-  },
-  {
-    id: 8,
-    imgSrc: '/icons/react.svg',
-    text: 'React',
-  },
-  {
-    id: 9,
-    imgSrc: '/icons/typescript.svg',
-    text: 'TypeScript',
-  },
-
-  {
-    id: 10,
-    imgSrc: '/icons/redux.svg',
-    text: 'Redux / Redux Toolkit',
-  },
-];
 
 const About = () => {
   const { t } = useTranslation();
@@ -65,7 +12,7 @@ const About = () => {
     <>
       <div className={styles.about}>
         <div className={styles.info}>
-          <span>{t('about0')}</span>
+          <span className={styles.subtitle}>{t('about0')}</span>
 
           <p>
             {t('about1')}
@@ -83,10 +30,10 @@ const About = () => {
         </div>
 
         <div className={styles.skills}>
-          <span>{t('skills')}:</span>
+          <span className={styles.subtitle}>{t('skills')}:</span>
           <ul className={styles.list}>
-            {skillsList.map((skill) => (
-              <Skill key={skill.id} imgSrc={skill.imgSrc} text={skill.text} />
+            {skillsList.map((skills, index) => (
+              <Skill key={index} skills={skills} />
             ))}
           </ul>
         </div>
