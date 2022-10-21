@@ -19,14 +19,18 @@ const About = () => {
             <b>{t('about2')}</b>
             {t('about3')}
           </p>
-          <p>{t('about4')}</p>
-          <p>{t('about5')}</p>
-          <p>{t('about6')}</p>
+          <ul className={styles.aboutList}>
+            <li>{t('about4')}</li>
+            <li>{t('about5')}</li>
+            <li>{t('about6')}</li>
+            <li>{t('about7')}</li>
+            <li>{t('about8')}</li>
+          </ul>
           <p>
-            <b>{t('about7')}</b>
+            <b>{t('about9')}</b>
           </p>
 
-          <p>{t('about8')}</p>
+          <p>{t('about10')}</p>
         </div>
 
         <div className={styles.skills}>

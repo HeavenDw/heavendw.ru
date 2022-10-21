@@ -52,6 +52,13 @@
   gap: 2rem;
 }
 
+.aboutList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 150%;
+}
+
 .skills {
   flex: 1 0 34rem;
   .list {

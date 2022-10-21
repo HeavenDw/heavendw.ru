@@ -15,11 +15,13 @@
   "about1": "My name is ",
   "about2": "Otinov Konstantin",
   "about3": ", 28 years old. Living in Russia, my hometown is Perm.",
-  "about4": "I have been a web developer since 2020. First i made sites with html5, scss, jquery. Later i changed jquery to pure JavaScript. Started using cms Wordress and sql database.",
-  "about5": "Developed several freelance commercial project (single-page sites with wordpress).",
-  "about6": "Now i'm learning and working with react, typescript, redux.",
-  "about7": "Looking for a job! (Frontend developer).",
-  "about8": "Languages: Russian, English",
+  "about4": "- Have commercial experience in freelance website development",
+  "about5": "- Experience in React app development - 1 year",
+  "about6": "- Understand how Frontend works with backend",
+  "about7": "- Understand the principles of testing",
+  "about8": "- Know the basics of UI/UX",
+  "about9": "Looking for a job! (Frontend developer).",
+  "about10": "Languages: Russian, English",
   "skills": "Skills",
   "footer": "Personal porfolio website"
 }
